@@ -9,6 +9,7 @@ Bayyinah Archive: A one-person digital database built to expose the truth and de
 
 ---
 
+```text
 PROJECT_STATUS: Active / Live Deployment
 DEVELOPER: WyvernXXI
 ARCHITECTURE: HTML5

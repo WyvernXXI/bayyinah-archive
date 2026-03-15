@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بَيِّنة - أرشيف الخرافات</title>
+
+    <meta property="og:title" content="بَيِّنة - أرشيف الخرافات">
+     <meta property="og:description" content="قاعدة بيانات مشفرة لكشف الحقائق وتفنيد أشهر الخرافات الطبية والتقنية. تم التحقيق بواسطة وايڤرن٢١.">
+     <meta property="og:image" content="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://YOUR-GITHUB-USERNAME.github.io/bayyinah-archive/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#00ff00">
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            background-image: repeating-linear-gradient(45deg, #1a1a1a, #1a1a1a 10px, #222 10px, #222 20px);
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            cursor: crosshair; 
+        }
+        
+        a, button { cursor: zoom-in; }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, #e0e0e0 0%, #a3a3a3 100%);
+            border: 6px outset #cccccc; 
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+            text-shadow: 1px 1px 0px #ffffff;
+            border-bottom: 3px groove #ffffff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .hacker-ticker {
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: #000000;
+            color: #00ff00; 
+            padding: 8px;
+            border: 4px inset #888888; 
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-shadow: 0px 0px 5px #00ff00; 
+            cursor: default;
+        }
+
+        .ticker-text {
+            display: inline-block;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .terminal-screen {
+            background-color: #0a0a0a;
+            color: #00ff00;
+            border: 4px inset #666666; 
+            padding: 15px;
+            margin-top: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 400px;
+        }
+
+        ul.directory-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul.directory-list li { margin-bottom: 10px; }
+
+        ul.directory-list button {
+            background: none;
+            border: 1px dashed #00ff00;
+            color: #00ff00;
+            width: 100%;
+            text-align: right;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        ul.directory-list button:hover {
+            background-color: #00ff00;
+            color: #000000; 
+        }
+
+        .back-btn {
+            background: linear-gradient(to bottom, #777, #444);
+            color: white;
+            border: 2px outset #777;
+            padding: 5px 15px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-family: 'Tahoma', sans-serif;
+            width: 100%;
+            text-align: right;
+        }
+
+        .back-btn:active { border: 2px inset #777; }
+
+        .myth-content h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            font-family: 'Tahoma', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .badge {
+            background: linear-gradient(to bottom, #ff4c4c, #990000);
+            color: #ffffff; 
+            font-weight: bold;
+            padding: 4px 8px;
+            border: 2px outset #ff4c4c;
+            text-shadow: 1px 1px 1px #000;
+            font-family: 'Tahoma', sans-serif;
+        }
+
+        .myth-content p {
+            font-family: 'Tahoma', sans-serif;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+        
+        .myth-content strong { color: #00ff00; }
+        .myth-content ul { font-family: 'Tahoma', sans-serif; color: #cccccc; margin-top: 0;}
+
+        a { color: #00bfff; text-decoration: underline; }
+        a:visited { color: #cc33ff; }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #444;
+            text-shadow: 1px 1px 0px #fff;
+            border-top: 3px groove #fff;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="hacker-ticker" dir="ltr">
+            <span class="ticker-text">SYSTEM SECURE // FORENSICS ARCHIVE ONLINE // DEBUNKING IN PROGRESS...</span>
+        </div>
+        
+        <h1>موقع بَيِّنة - نظام الملفات والتحقيقات</h1>
+        
+        <div class="terminal-screen">
+            
+            <div id="dir-main" class="folder">
+                <p>C:\Bayyinah\Root></p>
+                <ul class="directory-list">
+                    <li><button onclick="openFolder('dir-animals')">[مجلد] مملكة الحيوانات</button></li>
+                    <li><button onclick="openFolder('dir-tech')">[مجلد] التكنولوجيا والأمن السيبراني</button></li>
+                    <li><button onclick="openFolder('dir-health')">[مجلد] الطب والصحة والعلوم</button></li>
+                </ul>
+            </div>
+
+            <div id="dir-animals" class="folder" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-main')">◄ العودة للمسار الرئيسي</button>
+                <p>C:\Bayyinah\Root\Animals></p>
+                <ul class="directory-list">
+                    <li><button onclick="openFolder('file-alopecia')">[ملف] القطط ومرض الثعلبة.exe</button></li>
+                    <li><button onclick="openFolder('file-9lives')">[ملف] هل للقطط 9 أرواح؟.exe</button></li>
+                    <li><button onclick="openFolder('file-dog-color')">[ملف] الكلاب وعمى الألوان.exe</button></li>
+                    <li><button onclick="openFolder('file-goldfish')">[ملف] ذاكرة السمكة الذهبية.exe</button></li>
+                    <li><button onclick="openFolder('file-gecko')">[ملف] البرعص (الوزغ) ومرض البهاق.exe</button></li>
+                </ul>
+            </div>
+
+            <div id="file-alopecia" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-animals')">◄ إغلاق الملف</button>
+                <h2>القطط ومرض الثعلبة</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> تربية القطط في المنزل يؤدي إلى الإصابة بمرض الثعلبة الدائم.</p>
+                <p><strong>التحقيق:</strong> مرض الثعلبة هو اضطراب في المناعة الذاتية. الخلط يحدث بسبب عدوى فطرية تُعرف باسم "القوباء الحلقية" تنتقل أحياناً من القطط، لكنها سطحية ومؤقتة ومختلفة تماماً.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.aad.org/public/diseases/hair-loss/types/alopecia" target="_blank">الأكاديمية الأمريكية للأمراض الجلدية (AAD) - أسباب الثعلبة</a></li></ul>
+            </div>
+
+            <div id="file-9lives" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-animals')">◄ إغلاق الملف</button>
+                <h2>للقطط 9 أرواح</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> القطط تمتلك عدة أرواح وتستطيع النجاة من الموت المحتم.</p>
+                <p><strong>التحقيق:</strong> ظهرت الأسطورة في العصور القديمة بسبب مرونة القطط العالية وقدرتها الفطرية على تعديل وضعية جسدها في الهواء أثناء السقوط (Cat Righting Reflex)، مما يسمح لها بالهبوط بأمان.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.youtube.com/watch?v=RtWbpyjJqrU" target="_blank">تجربة فيزيائية (Smarter Every Day) - التصوير البطيء لفيزياء هبوط القطط</a></li></ul>
+            </div>
+
+            <div id="file-dog-color" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-animals')">◄ إغلاق الملف</button>
+                <h2>الكلاب ترى بالأبيض والأسود فقط</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> الكلاب مصابة بعمى ألوان كلي وترى العالم كفيلم قديم.</p>
+                <p><strong>التحقيق:</strong> تمتلك الكلاب مستقبلات ضوئية تسمح لها برؤية الألوان، ولكنها تمتلك نوعين فقط. هذا يعني أن الكلاب ترى العالم بدرجات من الأزرق والأصفر، وتجد صعوبة فقط في التمييز بين الأحمر والأخضر.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.akc.org/expert-advice/health/are-dogs-color-blind/" target="_blank">نادي كينيل الأمريكي (AKC) - كيف ترى الكلاب</a></li></ul>
+            </div>
+
+            <div id="file-goldfish" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-animals')">◄ إغلاق الملف</button>
+                <h2>ذاكرة السمكة الذهبية 3 ثوانٍ</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> السمكة الذهبية تعيش في حاضر مستمر وتنسى كل شيء فوراً.</p>
+                <p><strong>التحقيق:</strong> أثبتت الأبحاث المكثفة في الإدراك الحيواني أن هذه الأسماك تمتلك ذاكرة مكانية تدوم لعدة أشهر. استطاعت الأسماك تذكر مواقع الطعام بكفاءة وتعديل سلوكياتها بعد فترات طويلة من التدريب الأول.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.amnh.org/learn-teach/curriculum-collections/young-naturalist-awards/goldfish-as-a-model-for-understanding-learning-and-memory-more-complex-than-you-think" target="_blank">المتحف الأمريكي للتاريخ الطبيعي (AMNH) - أبحاث ذاكرة الأسماك</a></li></ul>
+            </div>
+
+            <div id="file-gecko" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-animals')">◄ إغلاق الملف</button>
+                <h2>البرعص (الوزغ) يسبب البهاق</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> إذا سار البرعص (الوزغ) على طعامك أو لامس جلدك، فإنه ينقل لك البهاق.</p>
+                <p><strong>التحقيق:</strong> هذا الاعتقاد نابع من التشابه في الاسم الشعبي للحيوان (البرص) واسم المرض. البهاق هو اضطراب في المناعة الذاتية يهاجم الخلايا الصبغية، وهو غير معدٍ إطلاقاً ولا ينتقل عبر الحيوانات.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.mayoclinic.org/ar/diseases-conditions/vitiligo/symptoms-causes/syc-20355912" target="_blank">مايو كلينك - أسباب مرض البهاق</a></li></ul>
+            </div>
+
+            <div id="dir-tech" class="folder" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-main')">◄ العودة للمسار الرئيسي</button>
+                <p>C:\Bayyinah\Root\Tech_Security></p>
+                <ul class="directory-list">
+                    <li><button onclick="openFolder('file-incognito')">[ملف] التصفح الخفي يحميك تماماً.exe</button></li>
+                    <li><button onclick="openFolder('file-trash')">[ملف] سلة المهملات تحذف البيانات.exe</button></li>
+                    <li><button onclick="openFolder('file-apps')">[ملف] إغلاق تطبيقات الخلفية.exe</button></li>
+                    <li><button onclick="openFolder('file-charge')">[ملف] شحن الهاتف طوال الليل.exe</button></li>
+                    <li><button onclick="openFolder('file-wangiri')">[ملف] المكالمات الدولية والاختراق.exe</button></li>
+                    <li><button onclick="openFolder('file-lightning')">[ملف] المحمول وجذب الصواعق.exe</button></li>
+                </ul>
+            </div>
+
+            <div id="file-incognito" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-tech')">◄ إغلاق الملف</button>
+                <h2>التصفح الخفي (Incognito) يجعلك مخفياً</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> التصفح الخفي يمنع أي جهة من تتبعك عبر الإنترنت.</p>
+                <p><strong>التحقيق:</strong> الوضع الخفي يمنع متصفحك فقط من حفظ سجل الزيارات على جهازك. مزود خدمة الإنترنت (ISP)، ومدير الشبكة، والمواقع التي تزورها لا يزالون قادرين على تتبع نشاطك.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://support.google.com/chrome/answer/95464" target="_blank">وثائق دعم Google Chrome الرسمية</a></li></ul>
+            </div>
+
+            <div id="file-trash" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-tech')">◄ إغلاق الملف</button>
+                <h2>تفريغ سلة المهملات يحذف الملفات نهائياً</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> بمجرد إفراغ سلة المهملات، يختفي الملف للأبد.</p>
+                <p><strong>التحقيق:</strong> نظام التشغيل يحذف فقط "المؤشر" الذي يخبر النظام بمكان الملف. البيانات تظل موجودة ويمكن استرجاعها ببرامج التحقيق الجنائي الرقمي ولن تختفي تماماً إلا إذا كُتبت بيانات جديدة فوقها.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.cisa.gov/news-events/news/proper-disposal-electronic-devices" target="_blank">وكالة الأمن السيبراني الأمريكية (CISA)</a></li></ul>
+            </div>
+
+            <div id="file-apps" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-tech')">◄ إغلاق الملف</button>
+                <h2>إغلاق تطبيقات الخلفية يوفر البطارية</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> سحب التطبيقات وإغلاقها يسرع الهاتف ويوفر طاقته.</p>
+                <p><strong>التحقيق:</strong> أنظمة التشغيل تصمم لتجميد التطبيقات في الخلفية. الإغلاق الإجباري يستهلك طاقة أكبر لأن النظام يضطر إلى إعادة تحميل التطبيق بالكامل من الصفر لاحقاً.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.apple.com/batteries/maximizing-performance/" target="_blank">نصائح أداء البطارية الرسمية - Apple</a></li></ul>
+            </div>
+
+            <div id="file-charge" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-tech')">◄ إغلاق الملف</button>
+                <h2>شحن الهاتف طوال الليل يدمر البطارية</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> ترك الهاتف موصولاً بالشاحن يؤدي إلى شحن زائد وتلف البطارية.</p>
+                <p><strong>التحقيق:</strong> الهواتف الذكية تمتلك دوائر حماية تقطع التيار الكهربائي تلقائياً بمجرد وصول البطارية إلى 100%. العدو الحقيقي للبطاريات هو الحرارة الشديدة، وليس الشحن الزائد.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://batteryuniversity.com/article/bu-409-charging-lithium-ion" target="_blank">جامعة البطاريات (Battery University)</a></li></ul>
+            </div>
+
+            <div id="file-wangiri" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-tech')">◄ إغلاق الملف</button>
+                <h2>الرد على مكالمة دولية يخترق الهاتف</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> الرد على مكالمة غريبة يخترق جهازك ويسحب صورك.</p>
+                <p><strong>التحقيق:</strong> من المستحيل تقنياً اختراق هاتف بمجرد الرد على اتصال صوتي. الهدف من هذه المكالمات هو الاحتيال المالي (Wangiri) لدفعك للاتصال بهم وسحب رصيد اتصالك، لكن بياناتك تظل آمنة.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.fcc.gov/consumers/guides/one-ring-phone-scam" target="_blank">لجنة الاتصالات الفيدرالية (FCC)</a></li></ul>
+            </div>
+
+            <div id="file-lightning" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-tech')">◄ إغلاق الملف</button>
+                <h2>استخدام الهاتف المحمول يجذب الصواعق</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> استخدام الهاتف المحمول في الخارج أثناء العواصف يجذب البرق نحوك.</p>
+                <p><strong>التحقيق:</strong> الهواتف المحمولة لا تجذب البرق إطلاقاً. البرق يبحث دائماً عن أطول مسار أو جسم في المنطقة لتفريغ شحنته في الأرض. إذا كنت تقف في منطقة مفتوحة أثناء عاصفة، فأنت تمثل الهدف الأطول والأخطر، سواء كنت تمسك هاتفاً أو لا.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.weather.gov/safety/lightning-myths" target="_blank">خدمة الطقس الوطنية الأمريكية (NWS) - خرافات وحقائق حول البرق</a></li></ul>
+            </div>
+
+            <div id="dir-health" class="folder" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-main')">◄ العودة للمسار الرئيسي</button>
+                <p>C:\Bayyinah\Root\Health_Science></p>
+                <ul class="directory-list">
+                    <li><button onclick="openFolder('file-wall')">[ملف] سور الصين من الفضاء.exe</button></li>
+                    <li><button onclick="openFolder('file-fish-milk')">[ملف] السمك واللبن يسبب التسمم.exe</button></li>
+                    <li><button onclick="openFolder('file-water-stand')">[ملف] شرب الماء واقفاً يضر الكلى.exe</button></li>
+                    <li><button onclick="openFolder('file-knuckles')">[ملف] طقطقة الأصابع والروماتيزم.exe</button></li>
+                    <li><button onclick="openFolder('file-bermuda')">[ملف] مثلث برمودا المميت.exe</button></li>
+                    <li><button onclick="openFolder('file-cold')">[ملف] الطقس البارد ونزلات البرد.exe</button></li>
+                    <li><button onclick="openFolder('file-shave')">[ملف] حلاقة الشعر وكثافته.exe</button></li>
+                    <li><button onclick="openFolder('file-tv')">[ملف] الجلوس قريباً من التلفاز.exe</button></li>
+                    <li><button onclick="openFolder('file-glasses')">[ملف] النظارات تضعف النظر.exe</button></li>
+                </ul>
+            </div>
+
+            <div id="file-wall" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>سور الصين العظيم يُرى من الفضاء</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> السور يُرى بالعين المجردة من الفضاء.</p>
+                <p><strong>التحقيق:</strong> السور ضيق جداً ولونه يندمج تماماً مع الطبيعة. أكدت وكالة ناسا أنه من المستحيل رؤيته بالعين المجردة من المدار. ما يُرى بوضوح ليلاً هو أضواء المدن.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.nasa.gov/vision/space/workinginspace/great_wall.html" target="_blank">وكالة الفضاء الأمريكية (NASA)</a></li></ul>
+            </div>
+
+            <div id="file-fish-milk" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>الجمع بين السمك واللبن يسبب البهاق أو التسمم</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> تناول المأكولات البحرية وشرب اللبن يسبب تسمماً أو بهاقاً.</p>
+                <p><strong>التحقيق:</strong> طبياً، لا يوجد أي تفاعل كيميائي سام بين السمك ومنتجات الألبان. البهاق مرض مناعي وجيني. المانع الوحيد للجمع بينهما هو وجود حساسية مسبقة للأسماك أو عدم تحمل اللاكتوز.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://my.clevelandclinic.org/health/diseases/12419-vitiligo" target="_blank">كليفلاند كلينك (Cleveland Clinic) - الأسباب المناعية للبهاق</a></li></ul>
+            </div>
+
+            <div id="file-water-stand" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>شرب الماء واقفاً يضر الكلى والمفاصل</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> الشرب بوضعية الوقوف يجعل الماء يصطدم بقوة بالمعدة ويسبب ضرراً للمفاصل وفشلاً كلوياً.</p>
+                <p><strong>التحقيق:</strong> المريء يحتوي على عضلات عاصرة تدفع السوائل بانتظام نحو المعدة بغض النظر عن الجاذبية. والكلى تفلتر الدم بناءً على حاجة الجسم. لا يوجد أي دليل طبي منهجي يثبت أن الشرب واقفاً يؤدي إلى تلف المفاصل أو الكلى.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://medicaldialogues.in/fact-check/fact-check-can-drinking-water-while-standing-lead-to-joint-damage-136191" target="_blank">ميديكال ديالوجز - تدقيق طبي من أطباء العظام</a></li></ul>
+            </div>
+
+            <div id="file-knuckles" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>طقطقة الأصابع تسبب الروماتيزم</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> فرقعة مفاصل الأصابع تؤدي إلى التهاب المفاصل عند الكبر.</p>
+                <p><strong>التحقيق:</strong> الصوت الذي تسمعه هو مجرد انفجار لفقاعات غاز النيتروجين داخل السائل الذي يحيط بالمفصل، وليس احتكاكاً للعظام. الأبحاث الطبية أثبتت عدم وجود أي رابط بين طقطقة الأصابع والإصابة بالتهاب المفاصل.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.hopkinsarthritis.org/arthritis-news/knuckle-cracking-q-a-from/" target="_blank">مركز جونز هوبكنز لالتهاب المفاصل - حقائق الطقطقة</a></li></ul>
+            </div>
+
+            <div id="file-bermuda" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>مثلث برمودا منطقة خطرة ومميتة</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> مثلث برمودا منطقة غامضة تبتلع السفن والطائرات بمعدلات غير طبيعية وبشكل خارق للطبيعة.</p>
+                <p><strong>التحقيق:</strong> إحصائياً وعلمياً، نسبة حوادث اختفاء السفن والطائرات في مثلث برمودا لا تختلف عن أي منطقة أخرى في المحيطات التي تشهد نفس الكثافة الملاحية العالية. خفر السواحل الأمريكي وشركات التأمين العالمية لا تعتبره منطقة خطرة بشكل استثنائي، ومعظم الحوادث تفسر بالطقس المتقلب أو الأخطاء البشرية.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://oceanservice.noaa.gov/facts/bermudatri.html" target="_blank">الإدارة الوطنية للمحيطات (NOAA) - حقيقة مثلث برمودا</a></li></ul>
+            </div>
+
+            <div id="file-cold" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>الطقس البارد يسبب نزلات البرد</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> الخروج في الطقس البارد بدون سترة أو بشعر مبلل يجعلك تصاب بالزكام فوراً.</p>
+                <p><strong>التحقيق:</strong> نزلات البرد والإنفلونزا تسببها الفيروسات (مثل فيروسات الأنف)، وليس درجات الحرارة المنخفضة. يمرض الناس أكثر في فصلي الخريف والشتاء لأنهم يقضون وقتاً أطول في أماكن مغلقة جنباً إلى جنب مع أشخاص آخرين، مما يسهل انتقال العدوى الفيروسية عبر الهواء.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.hopkinsmedicine.org/health/conditions-and-diseases/common-cold" target="_blank">طب جونز هوبكنز - مسببات نزلات البرد الحقيقية</a></li></ul>
+            </div>
+
+            <div id="file-shave" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>حلاقة الشعر تزيده كثافة وسماكة</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> حلاقة الشعر بالموس تجعله ينمو بشكل أسرع وأكثر كثافة وأغمق لوناً.</p>
+                <p><strong>التحقيق:</strong> الحلاقة تقطع فقط الجزء الميت من الشعر على سطح الجلد، ولا تؤثر على البصيلة الحية تحته. الشعر يبدو أكثر سمكاً في الأيام الأولى لأن الشفرة تترك حافة حادة وقاسية (Blunt tip) بدلاً من النهاية المدببة والناعمة الطبيعية للشعرة.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.mayoclinic.org/healthy-lifestyle/adult-health/expert-answers/hair-removal/faq-20058427" target="_blank">مايو كلينك - هل تزيد الحلاقة من كثافة الشعر؟</a></li></ul>
+            </div>
+
+            <div id="file-tv" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>الجلوس قريباً من التلفاز يضر العين</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> الجلوس بالقرب من شاشة التلفاز أو الأجهزة اللوحية يسبب تلفاً دائماً في شبكية العين أو العمى.</p>
+                <p><strong>التحقيق:</strong> الجلوس قريباً من الشاشات قد يسبب إجهاداً مؤقتاً للعين (بسبب قلة الرمش) أو صداعاً، لكنه لا يسبب ضرراً تشريحياً أو دائماً للعين. الأطفال يستطيعون التركيز عن قرب أفضل من البالغين دون إجهاد، وغالباً ما يجلس الطفل قريباً لأنه يعاني أصلاً من قصر النظر، وليس العكس.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.aao.org/eye-health/tips-prevention/common-eye-vision-myths-facts" target="_blank">الأكاديمية الأمريكية لطب العيون (AAO) - خرافات وحقائق عن الرؤية</a></li></ul>
+            </div>
+
+            <div id="file-glasses" class="folder myth-content" style="display: none;">
+                <button class="back-btn" onclick="openFolder('dir-health')">◄ إغلاق الملف</button>
+                <h2>النظارات تضعف النظر بمرور الوقت</h2>
+                <p><strong>الحالة:</strong> <span class="badge">خـــرافـــة</span></p>
+                <p><strong>الادعاء:</strong> ارتداء النظارات الطبية يجعل عضلات العين "كسولة" ويؤدي إلى تدهور النظر أسرع وتصبح معتمداً عليها بالكامل.</p>
+                <p><strong>التحقيق:</strong> النظارات تقوم فقط بتعديل زاوية انكسار الضوء ليتركز بشكل صحيح على الشبكية. لا يمكنها تغيير شكل العين الفعلي أو إضعاف عضلاتها. يتغير النظر ويزداد ضعفاً مع تقدم العمر بسبب تغيرات فسيولوجية طبيعية (مثل فقدان مرونة العدسة)، وليس بسبب تصحيح النظر بالنظارة.</p>
+                <p><strong>المصادر والأدلة:</strong></p>
+                <ul><li><a href="https://www.aao.org/eye-health/tips-prevention/common-eye-vision-myths-facts" target="_blank">الأكاديمية الأمريكية لطب العيون (AAO) - هل النظارات تضعف البصر؟</a></li></ul>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p>أنت الزائر رقم:</p>
+            <p>
+                <img src="https://hitwebcounter.com/counter/counter.php?page=1453267&style=0006&nbdigits=5&type=page&initCount=0" title="Free Counter" alt="web counter" border="0" />
+            </p>
+            <p>تم التصميم والتحقيق بواسطة وايڤرن٢١ © 2026</p>
+            <p>مشفر ومحمي - قاعدة بيانات بَيِّنة</p>
+        </div>
+
+    </div>
+
+    <script>
+        function openFolder(folderId) {
+            let folders = document.querySelectorAll('.folder');
+            folders.forEach(function(folder) {
+                folder.style.display = 'none';
+            });
+            document.getElementById(folderId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

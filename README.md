@@ -7,5 +7,5 @@ A one-person digital database built to expose the truth and debunk widespread mi
 ---------------------------------------------------------------
 PROJECT_STATUS  : Active
 DEVELOPER       : WyvernXXI
-ARCHITECTURE    : HTML
+ARCHITECTURE    : HTML5
 ===============================================================

@@ -1,17 +1,17 @@
 ```text
-=========================================================
-DATABASE: BAYYINAH ARCHIVE
-=========================================================
+# Bayyinah Archive
 
-[ARABIC_LOCALE]
+<div dir="rtl" align="right">
 أرشيف بَيِّنة: مشروع فردي وقاعدة بيانات رقمية لتفنيد أشهر الخرافات التقنية والطبية بالأدلة العلمية.
+</div>
+<br>
 
-[ENGLISH_LOCALE]
 Bayyinah Archive: A one-person digital database built to expose the truth and debunk widespread misconceptions.
 
----------------------------------------------------------
-PROJECT_STATUS: Active / Live Deployment
-DEVELOPER: WyvernXXI
-ARCHITECTURE: HTML5
-INFRASTRUCTURE: GitHub Pages
-=========================================================
+---
+
+---------------------------------------------------------------
+PROJECT_STATUS  : Active
+DEVELOPER       : WyvernXXI
+ARCHITECTURE    : HTML
+===============================================================

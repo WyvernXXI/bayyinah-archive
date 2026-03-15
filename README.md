@@ -1,4 +1,15 @@
-# bayyinah-archive
-أرشيف بَيِّنة: مشروع فردي وقاعدة بيانات رقمية لتفنيد أشهر الخرافات التقنية والطبية بالأدلة العلمية.
+# Bayyinah Archive
 
-Bayyinah Archive: A one-person digital database built to expose the truth and debunk widespread misconceptions.
+<div dir="rtl" align="right">
+أرشيف بَيِّنة: مشروع فردي وقاعدة بيانات رقمية لتفنيد أشهر الخرافات التقنية والطبية بالأدلة العلمية.
+</div>
+<br>
+
+Bayyinah Archive: A one-person digital database built to expose the truth and debunk widespread misconceptions.
+
+---
+
+PROJECT_STATUS: Active / Live Deployment
+DEVELOPER: WyvernXXI
+ARCHITECTURE: HTML5
+INFRASTRUCTURE: GitHub Pages
